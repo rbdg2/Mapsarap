@@ -1,0 +1,507 @@
+// !$*UTF8*$!
+{
+	archiveVersion = 1;
+	classes = {
+	};
+	objectVersion = 46;
+	objects = {
+
+/* Begin PBXBuildFile section */
+		69927BF9B434AF503C1406CB /* libPods-Mapsarap.a in Frameworks */ = {isa = PBXBuildFile; fileRef = 48377FCB50185EFBDF57D9F0 /* libPods-Mapsarap.a */; };
+		FD25DB861BAFAB9700E3D87C /* DataSource.swift in Sources */ = {isa = PBXBuildFile; fileRef = FD25DB851BAFAB9700E3D87C /* DataSource.swift */; };
+		FD25DB881BAFDBEB00E3D87C /* MPDataSource.swift in Sources */ = {isa = PBXBuildFile; fileRef = FD25DB871BAFDBEB00E3D87C /* MPDataSource.swift */; };
+		FD5233E91BAA9A8400FE8159 /* AppDelegate.swift in Sources */ = {isa = PBXBuildFile; fileRef = FD5233E81BAA9A8400FE8159 /* AppDelegate.swift */; };
+		FD5233EB1BAA9A8400FE8159 /* ViewController.swift in Sources */ = {isa = PBXBuildFile; fileRef = FD5233EA1BAA9A8400FE8159 /* ViewController.swift */; };
+		FD5233EE1BAA9A8400FE8159 /* Main.storyboard in Resources */ = {isa = PBXBuildFile; fileRef = FD5233EC1BAA9A8400FE8159 /* Main.storyboard */; };
+		FD5233F01BAA9A8400FE8159 /* Images.xcassets in Resources */ = {isa = PBXBuildFile; fileRef = FD5233EF1BAA9A8400FE8159 /* Images.xcassets */; };
+		FD5233F31BAA9A8400FE8159 /* LaunchScreen.xib in Resources */ = {isa = PBXBuildFile; fileRef = FD5233F11BAA9A8400FE8159 /* LaunchScreen.xib */; };
+		FD5233FF1BAA9A8400FE8159 /* MapsarapTests.swift in Sources */ = {isa = PBXBuildFile; fileRef = FD5233FE1BAA9A8400FE8159 /* MapsarapTests.swift */; };
+		FDC10B961BB0E2FC00AD8D34 /* ViewControllerCategory.swift in Sources */ = {isa = PBXBuildFile; fileRef = FDC10B951BB0E2FC00AD8D34 /* ViewControllerCategory.swift */; };
+/* End PBXBuildFile section */
+
+/* Begin PBXContainerItemProxy section */
+		FD5233F91BAA9A8400FE8159 /* PBXContainerItemProxy */ = {
+			isa = PBXContainerItemProxy;
+			containerPortal = FD5233DB1BAA9A8400FE8159 /* Project object */;
+			proxyType = 1;
+			remoteGlobalIDString = FD5233E21BAA9A8400FE8159;
+			remoteInfo = Mapsarap;
+		};
+/* End PBXContainerItemProxy section */
+
+/* Begin PBXFileReference section */
+		0641599C8B55AADEA18139B3 /* Pods-Mapsarap.release.xcconfig */ = {isa = PBXFileReference; includeInIndex = 1; lastKnownFileType = text.xcconfig; name = "Pods-Mapsarap.release.xcconfig"; path = "Pods/Target Support Files/Pods-Mapsarap/Pods-Mapsarap.release.xcconfig"; sourceTree = "<group>"; };
+		48377FCB50185EFBDF57D9F0 /* libPods-Mapsarap.a */ = {isa = PBXFileReference; explicitFileType = archive.ar; includeInIndex = 0; path = "libPods-Mapsarap.a"; sourceTree = BUILT_PRODUCTS_DIR; };
+		B45DAB315990D0696ACBEC0A /* Pods-Mapsarap.debug.xcconfig */ = {isa = PBXFileReference; includeInIndex = 1; lastKnownFileType = text.xcconfig; name = "Pods-Mapsarap.debug.xcconfig"; path = "Pods/Target Support Files/Pods-Mapsarap/Pods-Mapsarap.debug.xcconfig"; sourceTree = "<group>"; };
+		FD25DB851BAFAB9700E3D87C /* DataSource.swift */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.swift; path = DataSource.swift; sourceTree = "<group>"; };
+		FD25DB871BAFDBEB00E3D87C /* MPDataSource.swift */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.swift; path = MPDataSource.swift; sourceTree = "<group>"; };
+		FD5233E31BAA9A8400FE8159 /* Mapsarap.app */ = {isa = PBXFileReference; explicitFileType = wrapper.application; includeInIndex = 0; path = Mapsarap.app; sourceTree = BUILT_PRODUCTS_DIR; };
+		FD5233E71BAA9A8400FE8159 /* Info.plist */ = {isa = PBXFileReference; lastKnownFileType = text.plist.xml; path = Info.plist; sourceTree = "<group>"; };
+		FD5233E81BAA9A8400FE8159 /* AppDelegate.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = AppDelegate.swift; sourceTree = "<group>"; };
+		FD5233EA1BAA9A8400FE8159 /* ViewController.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = ViewController.swift; sourceTree = "<group>"; };
+		FD5233ED1BAA9A8400FE8159 /* Base */ = {isa = PBXFileReference; lastKnownFileType = file.storyboard; name = Base; path = Base.lproj/Main.storyboard; sourceTree = "<group>"; };
+		FD5233EF1BAA9A8400FE8159 /* Images.xcassets */ = {isa = PBXFileReference; lastKnownFileType = folder.assetcatalog; path = Images.xcassets; sourceTree = "<group>"; };
+		FD5233F21BAA9A8400FE8159 /* Base */ = {isa = PBXFileReference; lastKnownFileType = file.xib; name = Base; path = Base.lproj/LaunchScreen.xib; sourceTree = "<group>"; };
+		FD5233F81BAA9A8400FE8159 /* MapsarapTests.xctest */ = {isa = PBXFileReference; explicitFileType = wrapper.cfbundle; includeInIndex = 0; path = MapsarapTests.xctest; sourceTree = BUILT_PRODUCTS_DIR; };
+		FD5233FD1BAA9A8400FE8159 /* Info.plist */ = {isa = PBXFileReference; lastKnownFileType = text.plist.xml; path = Info.plist; sourceTree = "<group>"; };
+		FD5233FE1BAA9A8400FE8159 /* MapsarapTests.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = MapsarapTests.swift; sourceTree = "<group>"; };
+		FDC10B951BB0E2FC00AD8D34 /* ViewControllerCategory.swift */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.swift; path = ViewControllerCategory.swift; sourceTree = "<group>"; };
+/* End PBXFileReference section */
+
+/* Begin PBXFrameworksBuildPhase section */
+		FD5233E01BAA9A8400FE8159 /* Frameworks */ = {
+			isa = PBXFrameworksBuildPhase;
+			buildActionMask = 2147483647;
+			files = (
+				69927BF9B434AF503C1406CB /* libPods-Mapsarap.a in Frameworks */,
+			);
+			runOnlyForDeploymentPostprocessing = 0;
+		};
+		FD5233F51BAA9A8400FE8159 /* Frameworks */ = {
+			isa = PBXFrameworksBuildPhase;
+			buildActionMask = 2147483647;
+			files = (
+			);
+			runOnlyForDeploymentPostprocessing = 0;
+		};
+/* End PBXFrameworksBuildPhase section */
+
+/* Begin PBXGroup section */
+		34A719F54D6AA5E18D7B99E0 /* Pods */ = {
+			isa = PBXGroup;
+			children = (
+				B45DAB315990D0696ACBEC0A /* Pods-Mapsarap.debug.xcconfig */,
+				0641599C8B55AADEA18139B3 /* Pods-Mapsarap.release.xcconfig */,
+			);
+			name = Pods;
+			sourceTree = "<group>";
+		};
+		E06F0F7EB3A87AD6CD5C6336 /* Frameworks */ = {
+			isa = PBXGroup;
+			children = (
+				48377FCB50185EFBDF57D9F0 /* libPods-Mapsarap.a */,
+			);
+			name = Frameworks;
+			sourceTree = "<group>";
+		};
+		FD5233DA1BAA9A8400FE8159 = {
+			isa = PBXGroup;
+			children = (
+				FD5233E51BAA9A8400FE8159 /* Mapsarap */,
+				FD5233FB1BAA9A8400FE8159 /* MapsarapTests */,
+				FD5233E41BAA9A8400FE8159 /* Products */,
+				34A719F54D6AA5E18D7B99E0 /* Pods */,
+				E06F0F7EB3A87AD6CD5C6336 /* Frameworks */,
+			);
+			sourceTree = "<group>";
+		};
+		FD5233E41BAA9A8400FE8159 /* Products */ = {
+			isa = PBXGroup;
+			children = (
+				FD5233E31BAA9A8400FE8159 /* Mapsarap.app */,
+				FD5233F81BAA9A8400FE8159 /* MapsarapTests.xctest */,
+			);
+			name = Products;
+			sourceTree = "<group>";
+		};
+		FD5233E51BAA9A8400FE8159 /* Mapsarap */ = {
+			isa = PBXGroup;
+			children = (
+				FD5233E81BAA9A8400FE8159 /* AppDelegate.swift */,
+				FD5233EA1BAA9A8400FE8159 /* ViewController.swift */,
+				FDC10B951BB0E2FC00AD8D34 /* ViewControllerCategory.swift */,
+				FD25DB871BAFDBEB00E3D87C /* MPDataSource.swift */,
+				FD25DB851BAFAB9700E3D87C /* DataSource.swift */,
+				FD5233EC1BAA9A8400FE8159 /* Main.storyboard */,
+				FD5233EF1BAA9A8400FE8159 /* Images.xcassets */,
+				FD5233F11BAA9A8400FE8159 /* LaunchScreen.xib */,
+				FD5233E61BAA9A8400FE8159 /* Supporting Files */,
+			);
+			path = Mapsarap;
+			sourceTree = "<group>";
+		};
+		FD5233E61BAA9A8400FE8159 /* Supporting Files */ = {
+			isa = PBXGroup;
+			children = (
+				FD5233E71BAA9A8400FE8159 /* Info.plist */,
+			);
+			name = "Supporting Files";
+			sourceTree = "<group>";
+		};
+		FD5233FB1BAA9A8400FE8159 /* MapsarapTests */ = {
+			isa = PBXGroup;
+			children = (
+				FD5233FE1BAA9A8400FE8159 /* MapsarapTests.swift */,
+				FD5233FC1BAA9A8400FE8159 /* Supporting Files */,
+			);
+			path = MapsarapTests;
+			sourceTree = "<group>";
+		};
+		FD5233FC1BAA9A8400FE8159 /* Supporting Files */ = {
+			isa = PBXGroup;
+			children = (
+				FD5233FD1BAA9A8400FE8159 /* Info.plist */,
+			);
+			name = "Supporting Files";
+			sourceTree = "<group>";
+		};
+/* End PBXGroup section */
+
+/* Begin PBXNativeTarget section */
+		FD5233E21BAA9A8400FE8159 /* Mapsarap */ = {
+			isa = PBXNativeTarget;
+			buildConfigurationList = FD5234021BAA9A8400FE8159 /* Build configuration list for PBXNativeTarget "Mapsarap" */;
+			buildPhases = (
+				7D0EF136C2BE6BB5894EDAE5 /* Check Pods Manifest.lock */,
+				FD5233DF1BAA9A8400FE8159 /* Sources */,
+				FD5233E01BAA9A8400FE8159 /* Frameworks */,
+				FD5233E11BAA9A8400FE8159 /* Resources */,
+				BE0E599AED2DD71DB68CD83B /* Copy Pods Resources */,
+			);
+			buildRules = (
+			);
+			dependencies = (
+			);
+			name = Mapsarap;
+			productName = Mapsarap;
+			productReference = FD5233E31BAA9A8400FE8159 /* Mapsarap.app */;
+			productType = "com.apple.product-type.application";
+		};
+		FD5233F71BAA9A8400FE8159 /* MapsarapTests */ = {
+			isa = PBXNativeTarget;
+			buildConfigurationList = FD5234051BAA9A8400FE8159 /* Build configuration list for PBXNativeTarget "MapsarapTests" */;
+			buildPhases = (
+				FD5233F41BAA9A8400FE8159 /* Sources */,
+				FD5233F51BAA9A8400FE8159 /* Frameworks */,
+				FD5233F61BAA9A8400FE8159 /* Resources */,
+			);
+			buildRules = (
+			);
+			dependencies = (
+				FD5233FA1BAA9A8400FE8159 /* PBXTargetDependency */,
+			);
+			name = MapsarapTests;
+			productName = MapsarapTests;
+			productReference = FD5233F81BAA9A8400FE8159 /* MapsarapTests.xctest */;
+			productType = "com.apple.product-type.bundle.unit-test";
+		};
+/* End PBXNativeTarget section */
+
+/* Begin PBXProject section */
+		FD5233DB1BAA9A8400FE8159 /* Project object */ = {
+			isa = PBXProject;
+			attributes = {
+				LastUpgradeCheck = 0640;
+				ORGANIZATIONNAME = "RB de Guzman";
+				TargetAttributes = {
+					FD5233E21BAA9A8400FE8159 = {
+						CreatedOnToolsVersion = 6.4;
+					};
+					FD5233F71BAA9A8400FE8159 = {
+						CreatedOnToolsVersion = 6.4;
+						TestTargetID = FD5233E21BAA9A8400FE8159;
+					};
+				};
+			};
+			buildConfigurationList = FD5233DE1BAA9A8400FE8159 /* Build configuration list for PBXProject "Mapsarap" */;
+			compatibilityVersion = "Xcode 3.2";
+			developmentRegion = English;
+			hasScannedForEncodings = 0;
+			knownRegions = (
+				en,
+				Base,
+			);
+			mainGroup = FD5233DA1BAA9A8400FE8159;
+			productRefGroup = FD5233E41BAA9A8400FE8159 /* Products */;
+			projectDirPath = "";
+			projectRoot = "";
+			targets = (
+				FD5233E21BAA9A8400FE8159 /* Mapsarap */,
+				FD5233F71BAA9A8400FE8159 /* MapsarapTests */,
+			);
+		};
+/* End PBXProject section */
+
+/* Begin PBXResourcesBuildPhase section */
+		FD5233E11BAA9A8400FE8159 /* Resources */ = {
+			isa = PBXResourcesBuildPhase;
+			buildActionMask = 2147483647;
+			files = (
+				FD5233EE1BAA9A8400FE8159 /* Main.storyboard in Resources */,
+				FD5233F31BAA9A8400FE8159 /* LaunchScreen.xib in Resources */,
+				FD5233F01BAA9A8400FE8159 /* Images.xcassets in Resources */,
+			);
+			runOnlyForDeploymentPostprocessing = 0;
+		};
+		FD5233F61BAA9A8400FE8159 /* Resources */ = {
+			isa = PBXResourcesBuildPhase;
+			buildActionMask = 2147483647;
+			files = (
+			);
+			runOnlyForDeploymentPostprocessing = 0;
+		};
+/* End PBXResourcesBuildPhase section */
+
+/* Begin PBXShellScriptBuildPhase section */
+		7D0EF136C2BE6BB5894EDAE5 /* Check Pods Manifest.lock */ = {
+			isa = PBXShellScriptBuildPhase;
+			buildActionMask = 2147483647;
+			files = (
+			);
+			inputPaths = (
+			);
+			name = "Check Pods Manifest.lock";
+			outputPaths = (
+			);
+			runOnlyForDeploymentPostprocessing = 0;
+			shellPath = /bin/sh;
+			shellScript = "diff \"${PODS_ROOT}/../Podfile.lock\" \"${PODS_ROOT}/Manifest.lock\" > /dev/null\nif [[ $? != 0 ]] ; then\n    cat << EOM\nerror: The sandbox is not in sync with the Podfile.lock. Run 'pod install' or update your CocoaPods installation.\nEOM\n    exit 1\nfi\n";
+			showEnvVarsInLog = 0;
+		};
+		BE0E599AED2DD71DB68CD83B /* Copy Pods Resources */ = {
+			isa = PBXShellScriptBuildPhase;
+			buildActionMask = 2147483647;
+			files = (
+			);
+			inputPaths = (
+			);
+			name = "Copy Pods Resources";
+			outputPaths = (
+			);
+			runOnlyForDeploymentPostprocessing = 0;
+			shellPath = /bin/sh;
+			shellScript = "\"${SRCROOT}/Pods/Target Support Files/Pods-Mapsarap/Pods-Mapsarap-resources.sh\"\n";
+			showEnvVarsInLog = 0;
+		};
+/* End PBXShellScriptBuildPhase section */
+
+/* Begin PBXSourcesBuildPhase section */
+		FD5233DF1BAA9A8400FE8159 /* Sources */ = {
+			isa = PBXSourcesBuildPhase;
+			buildActionMask = 2147483647;
+			files = (
+				FD25DB861BAFAB9700E3D87C /* DataSource.swift in Sources */,
+				FDC10B961BB0E2FC00AD8D34 /* ViewControllerCategory.swift in Sources */,
+				FD25DB881BAFDBEB00E3D87C /* MPDataSource.swift in Sources */,
+				FD5233EB1BAA9A8400FE8159 /* ViewController.swift in Sources */,
+				FD5233E91BAA9A8400FE8159 /* AppDelegate.swift in Sources */,
+			);
+			runOnlyForDeploymentPostprocessing = 0;
+		};
+		FD5233F41BAA9A8400FE8159 /* Sources */ = {
+			isa = PBXSourcesBuildPhase;
+			buildActionMask = 2147483647;
+			files = (
+				FD5233FF1BAA9A8400FE8159 /* MapsarapTests.swift in Sources */,
+			);
+			runOnlyForDeploymentPostprocessing = 0;
+		};
+/* End PBXSourcesBuildPhase section */
+
+/* Begin PBXTargetDependency section */
+		FD5233FA1BAA9A8400FE8159 /* PBXTargetDependency */ = {
+			isa = PBXTargetDependency;
+			target = FD5233E21BAA9A8400FE8159 /* Mapsarap */;
+			targetProxy = FD5233F91BAA9A8400FE8159 /* PBXContainerItemProxy */;
+		};
+/* End PBXTargetDependency section */
+
+/* Begin PBXVariantGroup section */
+		FD5233EC1BAA9A8400FE8159 /* Main.storyboard */ = {
+			isa = PBXVariantGroup;
+			children = (
+				FD5233ED1BAA9A8400FE8159 /* Base */,
+			);
+			name = Main.storyboard;
+			sourceTree = "<group>";
+		};
+		FD5233F11BAA9A8400FE8159 /* LaunchScreen.xib */ = {
+			isa = PBXVariantGroup;
+			children = (
+				FD5233F21BAA9A8400FE8159 /* Base */,
+			);
+			name = LaunchScreen.xib;
+			sourceTree = "<group>";
+		};
+/* End PBXVariantGroup section */
+
+/* Begin XCBuildConfiguration section */
+		FD5234001BAA9A8400FE8159 /* Debug */ = {
+			isa = XCBuildConfiguration;
+			buildSettings = {
+				ALWAYS_SEARCH_USER_PATHS = NO;
+				CLANG_CXX_LANGUAGE_STANDARD = "gnu++0x";
+				CLANG_CXX_LIBRARY = "libc++";
+				CLANG_ENABLE_MODULES = YES;
+				CLANG_ENABLE_OBJC_ARC = YES;
+				CLANG_WARN_BOOL_CONVERSION = YES;
+				CLANG_WARN_CONSTANT_CONVERSION = YES;
+				CLANG_WARN_DIRECT_OBJC_ISA_USAGE = YES_ERROR;
+				CLANG_WARN_EMPTY_BODY = YES;
+				CLANG_WARN_ENUM_CONVERSION = YES;
+				CLANG_WARN_INT_CONVERSION = YES;
+				CLANG_WARN_OBJC_ROOT_CLASS = YES_ERROR;
+				CLANG_WARN_UNREACHABLE_CODE = YES;
+				CLANG_WARN__DUPLICATE_METHOD_MATCH = YES;
+				CODE_SIGN_IDENTITY = "";
+				"CODE_SIGN_IDENTITY[sdk=iphoneos*]" = "";
+				COPY_PHASE_STRIP = NO;
+				DEBUG_INFORMATION_FORMAT = "dwarf-with-dsym";
+				ENABLE_STRICT_OBJC_MSGSEND = YES;
+				GCC_C_LANGUAGE_STANDARD = gnu99;
+				GCC_DYNAMIC_NO_PIC = NO;
+				GCC_NO_COMMON_BLOCKS = YES;
+				GCC_OPTIMIZATION_LEVEL = 0;
+				GCC_PREPROCESSOR_DEFINITIONS = (
+					"DEBUG=1",
+					"$(inherited)",
+				);
+				GCC_SYMBOLS_PRIVATE_EXTERN = NO;
+				GCC_WARN_64_TO_32_BIT_CONVERSION = YES;
+				GCC_WARN_ABOUT_RETURN_TYPE = YES_ERROR;
+				GCC_WARN_UNDECLARED_SELECTOR = YES;
+				GCC_WARN_UNINITIALIZED_AUTOS = YES_AGGRESSIVE;
+				GCC_WARN_UNUSED_FUNCTION = YES;
+				GCC_WARN_UNUSED_VARIABLE = YES;
+				IPHONEOS_DEPLOYMENT_TARGET = 8.4;
+				MTL_ENABLE_DEBUG_INFO = YES;
+				ONLY_ACTIVE_ARCH = YES;
+				PROVISIONING_PROFILE = "";
+				SDKROOT = iphoneos;
+				SWIFT_OPTIMIZATION_LEVEL = "-Onone";
+			};
+			name = Debug;
+		};
+		FD5234011BAA9A8400FE8159 /* Release */ = {
+			isa = XCBuildConfiguration;
+			buildSettings = {
+				ALWAYS_SEARCH_USER_PATHS = NO;
+				CLANG_CXX_LANGUAGE_STANDARD = "gnu++0x";
+				CLANG_CXX_LIBRARY = "libc++";
+				CLANG_ENABLE_MODULES = YES;
+				CLANG_ENABLE_OBJC_ARC = YES;
+				CLANG_WARN_BOOL_CONVERSION = YES;
+				CLANG_WARN_CONSTANT_CONVERSION = YES;
+				CLANG_WARN_DIRECT_OBJC_ISA_USAGE = YES_ERROR;
+				CLANG_WARN_EMPTY_BODY = YES;
+				CLANG_WARN_ENUM_CONVERSION = YES;
+				CLANG_WARN_INT_CONVERSION = YES;
+				CLANG_WARN_OBJC_ROOT_CLASS = YES_ERROR;
+				CLANG_WARN_UNREACHABLE_CODE = YES;
+				CLANG_WARN__DUPLICATE_METHOD_MATCH = YES;
+				CODE_SIGN_IDENTITY = "";
+				"CODE_SIGN_IDENTITY[sdk=iphoneos*]" = "";
+				COPY_PHASE_STRIP = NO;
+				DEBUG_INFORMATION_FORMAT = "dwarf-with-dsym";
+				ENABLE_NS_ASSERTIONS = NO;
+				ENABLE_STRICT_OBJC_MSGSEND = YES;
+				GCC_C_LANGUAGE_STANDARD = gnu99;
+				GCC_NO_COMMON_BLOCKS = YES;
+				GCC_WARN_64_TO_32_BIT_CONVERSION = YES;
+				GCC_WARN_ABOUT_RETURN_TYPE = YES_ERROR;
+				GCC_WARN_UNDECLARED_SELECTOR = YES;
+				GCC_WARN_UNINITIALIZED_AUTOS = YES_AGGRESSIVE;
+				GCC_WARN_UNUSED_FUNCTION = YES;
+				GCC_WARN_UNUSED_VARIABLE = YES;
+				IPHONEOS_DEPLOYMENT_TARGET = 8.4;
+				MTL_ENABLE_DEBUG_INFO = NO;
+				PROVISIONING_PROFILE = "";
+				SDKROOT = iphoneos;
+				VALIDATE_PRODUCT = YES;
+			};
+			name = Release;
+		};
+		FD5234031BAA9A8400FE8159 /* Debug */ = {
+			isa = XCBuildConfiguration;
+			baseConfigurationReference = B45DAB315990D0696ACBEC0A /* Pods-Mapsarap.debug.xcconfig */;
+			buildSettings = {
+				ASSETCATALOG_COMPILER_APPICON_NAME = AppIcon;
+				INFOPLIST_FILE = Mapsarap/Info.plist;
+				IPHONEOS_DEPLOYMENT_TARGET = 8.0;
+				LD_RUNPATH_SEARCH_PATHS = "$(inherited) @executable_path/Frameworks";
+				PRODUCT_NAME = "$(TARGET_NAME)";
+				PROVISIONING_PROFILE = "";
+			};
+			name = Debug;
+		};
+		FD5234041BAA9A8400FE8159 /* Release */ = {
+			isa = XCBuildConfiguration;
+			baseConfigurationReference = 0641599C8B55AADEA18139B3 /* Pods-Mapsarap.release.xcconfig */;
+			buildSettings = {
+				ASSETCATALOG_COMPILER_APPICON_NAME = AppIcon;
+				INFOPLIST_FILE = Mapsarap/Info.plist;
+				IPHONEOS_DEPLOYMENT_TARGET = 8.0;
+				LD_RUNPATH_SEARCH_PATHS = "$(inherited) @executable_path/Frameworks";
+				PRODUCT_NAME = "$(TARGET_NAME)";
+				PROVISIONING_PROFILE = "";
+			};
+			name = Release;
+		};
+		FD5234061BAA9A8400FE8159 /* Debug */ = {
+			isa = XCBuildConfiguration;
+			buildSettings = {
+				BUNDLE_LOADER = "$(TEST_HOST)";
+				FRAMEWORK_SEARCH_PATHS = (
+					"$(SDKROOT)/Developer/Library/Frameworks",
+					"$(inherited)",
+				);
+				GCC_PREPROCESSOR_DEFINITIONS = (
+					"DEBUG=1",
+					"$(inherited)",
+				);
+				INFOPLIST_FILE = MapsarapTests/Info.plist;
+				LD_RUNPATH_SEARCH_PATHS = "$(inherited) @executable_path/Frameworks @loader_path/Frameworks";
+				PRODUCT_NAME = "$(TARGET_NAME)";
+				TEST_HOST = "$(BUILT_PRODUCTS_DIR)/Mapsarap.app/Mapsarap";
+			};
+			name = Debug;
+		};
+		FD5234071BAA9A8400FE8159 /* Release */ = {
+			isa = XCBuildConfiguration;
+			buildSettings = {
+				BUNDLE_LOADER = "$(TEST_HOST)";
+				FRAMEWORK_SEARCH_PATHS = (
+					"$(SDKROOT)/Developer/Library/Frameworks",
+					"$(inherited)",
+				);
+				INFOPLIST_FILE = MapsarapTests/Info.plist;
+				LD_RUNPATH_SEARCH_PATHS = "$(inherited) @executable_path/Frameworks @loader_path/Frameworks";
+				PRODUCT_NAME = "$(TARGET_NAME)";
+				TEST_HOST = "$(BUILT_PRODUCTS_DIR)/Mapsarap.app/Mapsarap";
+			};
+			name = Release;
+		};
+/* End XCBuildConfiguration section */
+
+/* Begin XCConfigurationList section */
+		FD5233DE1BAA9A8400FE8159 /* Build configuration list for PBXProject "Mapsarap" */ = {
+			isa = XCConfigurationList;
+			buildConfigurations = (
+				FD5234001BAA9A8400FE8159 /* Debug */,
+				FD5234011BAA9A8400FE8159 /* Release */,
+			);
+			defaultConfigurationIsVisible = 0;
+			defaultConfigurationName = Release;
+		};
+		FD5234021BAA9A8400FE8159 /* Build configuration list for PBXNativeTarget "Mapsarap" */ = {
+			isa = XCConfigurationList;
+			buildConfigurations = (
+				FD5234031BAA9A8400FE8159 /* Debug */,
+				FD5234041BAA9A8400FE8159 /* Release */,
+			);
+			defaultConfigurationIsVisible = 0;
+			defaultConfigurationName = Release;
+		};
+		FD5234051BAA9A8400FE8159 /* Build configuration list for PBXNativeTarget "MapsarapTests" */ = {
+			isa = XCConfigurationList;
+			buildConfigurations = (
+				FD5234061BAA9A8400FE8159 /* Debug */,
+				FD5234071BAA9A8400FE8159 /* Release */,
+			);
+			defaultConfigurationIsVisible = 0;
+			defaultConfigurationName = Release;
+		};
+/* End XCConfigurationList section */
+	};
+	rootObject = FD5233DB1BAA9A8400FE8159 /* Project object */;
+}
