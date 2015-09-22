@@ -29,7 +29,7 @@ extension ViewController {
         case gmsMapViewCommands.cameraForBoundsinsets: cameraForBoundsinsets()
         break;
             
-        case gmsMapViewCommands.moveCamera: moveCamera()
+        case gmsMapViewCommands.moveCamera: moveCamera() //Not working
         break;
 
         case gmsMapViewCommands.animateToCameraPosition: animateToCameraPosition()
@@ -47,7 +47,7 @@ extension ViewController {
         case gmsMapViewCommands.animateToViewingAngle: animateToViewingAngle()
         break;
 
-        case gmsMapViewCommands.animateWithCameraUpdate: animateWithCameraUpdate()
+        case gmsMapViewCommands.animateWithCameraUpdate: animateWithCameraUpdate() //Not working
         break;
 
         case gmsMapViewCommands.animateToBearing: animateToBearing()
@@ -56,6 +56,18 @@ extension ViewController {
         case gmsMapViewCommands.animateToViewingAngle: animateToViewingAngle()
         break;
 
+        case gmsMapViewCommands.myLocationEnabled: myLocationEnabled() //Not working
+        break;
+
+        case gmsMapViewCommands.mapType: mapType()
+        break;
+            
+        case gmsMapViewCommands.trafficEnabled: trafficEnabled()
+        break;
+            
+        case gmsMapViewCommands.buildingsEnabled: buildingsEnabled()
+        break;
+            
         default:
             break;
         }
@@ -74,7 +86,7 @@ extension ViewController {
                 println("\(action)")
         }
         
-        let actionOk = UIAlertAction(title: "Ok", style: .Default) {
+        let actionOk = UIAlertAction(title: "OK", style: .Default) {
             action in
             let minTextField = alert.textFields![0] as! UITextField
             let maxTextField = alert.textFields![1] as! UITextField
@@ -104,7 +116,7 @@ extension ViewController {
     func moveCamera() {
         let alert = UIAlertController(title: gmsMapViewCommands.moveCamera, message: "Changes the camera according to update. The camera change is instantaneous (with no animation). see Section: GMSCameraUpdate", preferredStyle: UIAlertControllerStyle.Alert)
         
-        let actionOk = UIAlertAction(title: "Ok", style: .Default) {
+        let actionOk = UIAlertAction(title: "OK", style: .Default) {
             action in
         }
 
@@ -118,7 +130,7 @@ extension ViewController {
             println("\(action)")
         }
         
-        let actionOk = UIAlertAction(title: "Ok", style: .Default) {
+        let actionOk = UIAlertAction(title: "OK", style: .Default) {
             action in
             let latitude = alert.textFields![0] as! UITextField
             let longitude = alert.textFields![1] as! UITextField
@@ -171,7 +183,7 @@ extension ViewController {
             println("\(action)")
         }
         
-        let actionOk = UIAlertAction(title: "Ok", style: .Default) {
+        let actionOk = UIAlertAction(title: "OK", style: .Default) {
             action in
             let latitude = alert.textFields![0] as! UITextField
             let longitude = alert.textFields![1] as! UITextField
@@ -204,7 +216,7 @@ extension ViewController {
             println("\(action)")
         }
         
-        let actionOk = UIAlertAction(title: "Ok", style: .Default) {
+        let actionOk = UIAlertAction(title: "OK", style: .Default) {
             action in
             let zoom = alert.textFields![0] as! UITextField
             let zoomString : NSString = zoom.text
@@ -228,7 +240,7 @@ extension ViewController {
             println("\(action)")
         }
         
-        let actionOk = UIAlertAction(title: "Ok", style: .Default) {
+        let actionOk = UIAlertAction(title: "OK", style: .Default) {
             action in
             let zoom = alert.textFields![0] as! UITextField
             let zoomString : NSString = zoom.text
@@ -252,7 +264,7 @@ extension ViewController {
             println("\(action)")
         }
         
-        let actionOk = UIAlertAction(title: "Ok", style: .Default) {
+        let actionOk = UIAlertAction(title: "OK", style: .Default) {
             action in
             let zoom = alert.textFields![0] as! UITextField
             let zoomString : NSString = zoom.text
@@ -272,11 +284,101 @@ extension ViewController {
     func animateWithCameraUpdate() {
         let alert = UIAlertController(title: gmsMapViewCommands.animateWithCameraUpdate, message: "Applies cameraUpdate to the current camera, and then uses the result as per animateToCameraPosition: see Section: GMSCameraUpdate", preferredStyle: UIAlertControllerStyle.Alert)
         
-        let actionOk = UIAlertAction(title: "Ok", style: .Default) {
+        let actionOk = UIAlertAction(title: "OK", style: .Default) {
             action in
         }
         
         alert.addAction(actionOk)
+        presentViewController(alert, animated: true, completion: nil)
+    }
+    
+    func myLocationEnabled() {
+        let alert = UIAlertController(title: gmsMapViewCommands.myLocationEnabled, message: "Controls whether the My Location dot and accuracy circle is enabled. Defaults to NO.", preferredStyle: UIAlertControllerStyle.Alert)
+        
+        let no = UIAlertAction(title: "No", style: .Cancel) {
+            action in
+            self.mapView.myLocationEnabled = false
+        }
+        
+        let yes = UIAlertAction(title: "Yes", style: .Default) {
+            action in
+            self.mapView.myLocationEnabled = true
+        }
+        
+        alert.addAction(no)
+        alert.addAction(yes)
+        presentViewController(alert, animated: true, completion: nil)
+    }
+
+    func mapType() {
+        let alert = UIAlertController(title: gmsMapViewCommands.mapType, message: "Controls the type of map tiles that should be displayed. Defaults to kGMSTypeNormal.", preferredStyle: UIAlertControllerStyle.Alert)
+        
+        let none = UIAlertAction(title: "None", style: .Destructive) {
+            action in
+            self.mapView.mapType = kGMSTypeNone
+        }
+
+        let normal = UIAlertAction(title: "Normal", style: .Default) {
+            action in
+            self.mapView.mapType = kGMSTypeNormal
+        }
+
+        let hybrid = UIAlertAction(title: "Hybrid", style: .Default) {
+            action in
+            self.mapView.mapType = kGMSTypeHybrid
+        }
+
+        let satellite = UIAlertAction(title: "Satellite", style: .Default) {
+            action in
+            self.mapView.mapType = kGMSTypeSatellite
+        }
+        let terrain = UIAlertAction(title: "Terrain", style: .Default) {
+            action in
+            self.mapView.mapType = kGMSTypeTerrain
+        }
+        
+        alert.addAction(none)
+        alert.addAction(normal)
+        alert.addAction(hybrid)
+        alert.addAction(satellite)
+        alert.addAction(terrain)
+        presentViewController(alert, animated: true, completion: nil)
+        
+    }
+    
+    func trafficEnabled() {
+        let alert = UIAlertController(title: gmsMapViewCommands.trafficEnabled, message: "Controls whether the map is drawing traffic data, if available. This is subject to the availability of traffic data. Defaults to NO.", preferredStyle: UIAlertControllerStyle.Alert)
+        
+        let no = UIAlertAction(title: "No", style: .Cancel) {
+            action in
+            self.mapView.trafficEnabled = false
+        }
+        
+        let yes = UIAlertAction(title: "Yes", style: .Default) {
+            action in
+            self.mapView.trafficEnabled = true
+        }
+        
+        alert.addAction(no)
+        alert.addAction(yes)
+        presentViewController(alert, animated: true, completion: nil)
+    }
+    
+    func buildingsEnabled() {
+        let alert = UIAlertController(title: gmsMapViewCommands.buildingsEnabled, message: "If set, 3D buildings will be shown where available. Defaults to YES.", preferredStyle: UIAlertControllerStyle.Alert)
+        
+        let no = UIAlertAction(title: "No", style: .Cancel) {
+            action in
+            self.mapView.buildingsEnabled = false
+        }
+        
+        let yes = UIAlertAction(title: "Yes", style: .Default) {
+            action in
+            self.mapView.buildingsEnabled = true
+        }
+
+        alert.addAction(no)
+        alert.addAction(yes)
         presentViewController(alert, animated: true, completion: nil)
     }
 }

@@ -10,6 +10,7 @@
 		69927BF9B434AF503C1406CB /* libPods-Mapsarap.a in Frameworks */ = {isa = PBXBuildFile; fileRef = 48377FCB50185EFBDF57D9F0 /* libPods-Mapsarap.a */; };
 		FD25DB861BAFAB9700E3D87C /* DataSource.swift in Sources */ = {isa = PBXBuildFile; fileRef = FD25DB851BAFAB9700E3D87C /* DataSource.swift */; };
 		FD25DB881BAFDBEB00E3D87C /* MPDataSource.swift in Sources */ = {isa = PBXBuildFile; fileRef = FD25DB871BAFDBEB00E3D87C /* MPDataSource.swift */; };
+		FD363E641BB1424700A43A13 /* ViewControllerMapDelegate.swift in Sources */ = {isa = PBXBuildFile; fileRef = FD363E631BB1424700A43A13 /* ViewControllerMapDelegate.swift */; };
 		FD5233E91BAA9A8400FE8159 /* AppDelegate.swift in Sources */ = {isa = PBXBuildFile; fileRef = FD5233E81BAA9A8400FE8159 /* AppDelegate.swift */; };
 		FD5233EB1BAA9A8400FE8159 /* ViewController.swift in Sources */ = {isa = PBXBuildFile; fileRef = FD5233EA1BAA9A8400FE8159 /* ViewController.swift */; };
 		FD5233EE1BAA9A8400FE8159 /* Main.storyboard in Resources */ = {isa = PBXBuildFile; fileRef = FD5233EC1BAA9A8400FE8159 /* Main.storyboard */; };
@@ -35,6 +36,7 @@
 		B45DAB315990D0696ACBEC0A /* Pods-Mapsarap.debug.xcconfig */ = {isa = PBXFileReference; includeInIndex = 1; lastKnownFileType = text.xcconfig; name = "Pods-Mapsarap.debug.xcconfig"; path = "Pods/Target Support Files/Pods-Mapsarap/Pods-Mapsarap.debug.xcconfig"; sourceTree = "<group>"; };
 		FD25DB851BAFAB9700E3D87C /* DataSource.swift */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.swift; path = DataSource.swift; sourceTree = "<group>"; };
 		FD25DB871BAFDBEB00E3D87C /* MPDataSource.swift */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.swift; path = MPDataSource.swift; sourceTree = "<group>"; };
+		FD363E631BB1424700A43A13 /* ViewControllerMapDelegate.swift */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.swift; path = ViewControllerMapDelegate.swift; sourceTree = "<group>"; };
 		FD5233E31BAA9A8400FE8159 /* Mapsarap.app */ = {isa = PBXFileReference; explicitFileType = wrapper.application; includeInIndex = 0; path = Mapsarap.app; sourceTree = BUILT_PRODUCTS_DIR; };
 		FD5233E71BAA9A8400FE8159 /* Info.plist */ = {isa = PBXFileReference; lastKnownFileType = text.plist.xml; path = Info.plist; sourceTree = "<group>"; };
 		FD5233E81BAA9A8400FE8159 /* AppDelegate.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = AppDelegate.swift; sourceTree = "<group>"; };
@@ -110,6 +112,7 @@
 				FD5233E81BAA9A8400FE8159 /* AppDelegate.swift */,
 				FD5233EA1BAA9A8400FE8159 /* ViewController.swift */,
 				FDC10B951BB0E2FC00AD8D34 /* ViewControllerCategory.swift */,
+				FD363E631BB1424700A43A13 /* ViewControllerMapDelegate.swift */,
 				FD25DB871BAFDBEB00E3D87C /* MPDataSource.swift */,
 				FD25DB851BAFAB9700E3D87C /* DataSource.swift */,
 				FD5233EC1BAA9A8400FE8159 /* Main.storyboard */,
@@ -280,6 +283,7 @@
 			isa = PBXSourcesBuildPhase;
 			buildActionMask = 2147483647;
 			files = (
+				FD363E641BB1424700A43A13 /* ViewControllerMapDelegate.swift in Sources */,
 				FD25DB861BAFAB9700E3D87C /* DataSource.swift in Sources */,
 				FDC10B961BB0E2FC00AD8D34 /* ViewControllerCategory.swift in Sources */,
 				FD25DB881BAFDBEB00E3D87C /* MPDataSource.swift in Sources */,

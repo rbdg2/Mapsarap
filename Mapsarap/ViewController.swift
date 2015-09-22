@@ -10,6 +10,9 @@ import UIKit
 import GoogleMaps
 
 class GMSMapViewCommands : NSObject {
+    let functions = "GMSMapView Functions"
+    let properties = "GMSMapView Properties"
+    
     //Public Member Functions
     let clear = "clear"
     let setMinZoomMaxzoom = "setMinZoom:maxZoom"
@@ -22,8 +25,18 @@ class GMSMapViewCommands : NSObject {
     let animateToViewingAngle = "animateToViewingAngle:"
     let animateWithCameraUpdate = "animateWithCameraUpdate:"
     
+    //Properties
+    let myLocationEnabled = "myLocationEnabled"
+    let mapType = "mapType"
+    let trafficEnabled = "trafficEnabled"
+    let buildingsEnabled = "buildingsEnabled"
+    
     func allCommands() -> NSArray {
         return NSArray(array: [clear, setMinZoomMaxzoom, cameraForBoundsinsets, moveCamera, animateToCameraPosition, animateToLocation, animateToZoom, animateToBearing, animateToViewingAngle, animateWithCameraUpdate])
+    }
+    
+    func allProperties() -> NSArray {
+        return NSArray(array: [myLocationEnabled, mapType, trafficEnabled, buildingsEnabled])
     }
 }
 
@@ -54,12 +67,14 @@ class ViewController: UIViewController, GMSMapViewDelegate, UITableViewDataSourc
     
     override func viewDidAppear(animated: Bool) {
         super.viewDidAppear(animated)
+        
         tableView.reloadData()
     }
     
     func setupCommands() {
-        dataSource.addDataWithArrays(["StartOver"], addedDescriptions: [""], atSection: "Debug")
-        dataSource.addDataWithArrays(gmsMapViewCommands.allCommands(), addedDescriptions: [""], atSection: "GMSMapView")
+//        dataSource.addDataWithArrays(["StartOver"], addedDescriptions: [""], atSection: "Debug")
+        dataSource.addDataWithArrays(gmsMapViewCommands.allCommands(), addedDescriptions: [""], atSection: gmsMapViewCommands.functions)
+        dataSource.addDataWithArrays(gmsMapViewCommands.allProperties(), addedDescriptions: [""], atSection: gmsMapViewCommands.properties)
     }
     
     func mapView(mapView: GMSMapView!, didTapAtCoordinate coordinate: CLLocationCoordinate2D) {
