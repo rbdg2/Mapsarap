@@ -62,6 +62,9 @@ class ViewController: UIViewController, GMSMapViewDelegate, UITableViewDataSourc
         super.viewDidLoad()
         navigationController?.navigationBar.titleTextAttributes = [NSForegroundColorAttributeName : UIColor.whiteColor()]
 
+        var 🎁 : String = ""
+        println("Hey \(🎁)")
+
         setupCommands()
     }
     
